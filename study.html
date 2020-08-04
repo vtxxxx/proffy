@@ -1,0 +1,127 @@
+<!-- isso é uma tag <html> -->
+<!-- na tag <head> irá configurações do meu documento -->
+<!-- na tag <body> irá todo conteúdo visível da página -->
+
+<!DOCTYPE html>
+<html lang="pt_br">
+<!-- lang é um atributo -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/page-study.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="page-study">
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/">
+                    <img src="/images/icons/back.svg" alt="Voltar">
+                </a>
+                <img src="/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Esses são os proffy's disponíveis</strong>
+                <form id="search-teachers">
+                    <div class="select-block">
+                        <label for="subject">Matéria</label>
+                        <select name="subject" id="subject">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Biologia</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Português</option>
+                            <option value="10">Química</option>
+                            <option value="11">Web</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <label for="weekday">Dia da semana</label>
+                        <select name="weekday" id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="0">Domingo</option>
+                            <option value="1">Segunda-feira</option>
+                            <option value="2">Terça-feira</option>
+                            <option value="3">Quarta-feira</option>
+                            <option value="4">Quinta-feira</option>
+                            <option value="5">Sexta-feira</option>
+                            <option value="6">Sábado</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="time">Hora</label>
+                        <input name="time" id="time" type="time">
+                    </div>
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
+
+        </header>
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars1.githubusercontent.com/u/58451041?s=460&u=c07419b4e8bfa6d0410f335d7546530bec28d920&v=4"
+                        alt="Victor Polito">
+                    <div>
+                        <strong>Victor Polito</strong>
+                        <span>Web</span>
+                    </div>
+                </header>
+
+                <p>Entusiasta das melhores tecnologias web avançadas.<br><br>Gosta de explodir CPU's e mudar o estilo de
+                    vida das pessoas através de aplicações.</p>
+
+                <footer>
+                    <p>Preço/hora<strong> R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
+                    </button>
+                </footer>
+            </article>
+
+            <article class="teacher-item">
+                <header>
+                    <img src="https://scontent.fcnf1-1.fna.fbcdn.net/v/t1.0-9/15219638_1219531724789901_3312405569071574638_n.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=2SzrdVS9298AX_psQ-9&_nc_ht=scontent.fcnf1-1.fna&oh=a25c620ac795ddafda496ab63a601ca6&oe=5F4DF901"
+                        alt="Melissa Stinguel">
+                    <div>
+                        <strong>Melissa Stinguel</strong>
+                        <span>Ambiental</span>
+                    </div>
+                </header>
+
+                <p>Conhecedora das tecnologias ambientais avançadas.<br><br>Apaixonada pelo mato e plantinhas
+                    diferentes. Mais de 200.000 pessoas já passaram por uma das minhas plantações.</p>
+
+                <footer>
+                    <p>Preço/hora<strong> R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
+                    </button>
+                </footer>
+            </article>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
