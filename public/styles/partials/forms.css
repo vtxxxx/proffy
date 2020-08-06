@@ -1,3 +1,5 @@
+/* TUDO OK */
+
 .select-block label, 
 .input-block label,
 .textarea-block label {
@@ -44,5 +46,11 @@
     position: absolute;
     left: 1.6rem;
     bottom: 0px;
+}
+
+label small{
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    color: var(--color-smal-info);
 }
 
